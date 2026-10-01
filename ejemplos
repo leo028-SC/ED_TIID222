@@ -1,0 +1,52 @@
+matriz = [
+    [1,2],
+    [3,4]
+]
+
+#agregar una fila
+matriz.append([5,6])
+print(matriz [0][1])
+
+#modificar una celda
+matriz[0][1] = 10
+
+#eliminar una fila
+matriz.pop(0)
+
+#buscar un elemento en la matriz
+if 3 in matriz[1]:
+    print("Encontrado")
+
+
+    #crear una columna
+for fila in matriz:
+    fila.append(0)
+
+print(matriz)
+
+
+#Ejemplo de Cola
+
+from collections import deque
+import time
+
+cola = deque()
+
+cola.append("ana")
+cola.append("juan")
+cola.append("pedro")
+
+print("Cola actual:", list(cola))
+
+time.sleep(2)
+
+atendido = cola.popleft()
+print("Se atendió a:", atendido)
+
+time.sleep(2)
+
+print("siguiente en la cola:", cola[0])
+
+time.sleep(3)
+
+print ("Cola restante:", list(cola))
