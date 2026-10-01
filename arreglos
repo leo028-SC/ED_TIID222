@@ -1,0 +1,81 @@
+
+
+# Consultar un elemento
+numeros = [10, 20, 30, 40, 50]
+print(numeros[2])
+
+# Modificar un elemento
+numeros = [10, 20, 30, 40, 50]
+numeros[2] = 99
+print(numeros)
+
+# Agregar un elemento
+numeros = [10, 20, 30, 40, 50]
+numeros.append(60)
+print(numeros)
+
+# Opción 1 con append
+numeros = [10, 20, 30, 40, 50]
+numeros.append(60)
+numeros.append(70)
+print(numeros)
+
+# Opción 2 con append
+numeros = [10, 20, 30, 40, 50]
+numeros.append([60, 70])
+print(numeros)
+
+# Imprimir el 60
+numeros = [10, 20, 30, 40, 50, [60, 70]]
+print(numeros[5][0])
+
+# Insert()
+numeros = [10, 20, 30, 40]
+numeros.insert(2, 25)
+print(numeros)
+
+# Operador + 
+numeros = [10, 20, 30, 40]
+numeros = numeros + [50]
+print(numeros)
+
+# Operador + 
+numeros = [10, 20, 30, 40]
+numeros = numeros + [50, 60, 70]
+print(numeros)
+
+# extend()
+numeros = [10, 20, 30]
+numeros[len(numeros):] = [40, 50]
+print(numeros)
+
+
+#EJERCICIOS 
+
+# Ejercicio 1 — Lista de calificaciones
+calificaciones = [70, 85, 90, 65]
+calificaciones.append(95)
+calificaciones.insert(2, 80)
+print(calificaciones)
+
+# Ejercicio 2 — Agregar varios elementos
+colores = ["Azul", "Amarillo", "Rosa"]
+colores = colores + ["Verde", "Morado", "Rojo"]
+print(colores)
+colores.append("Negro")
+print(colores[6])
+
+# Ejercicio 3 — Reto de posiciones
+numeros = [10, 20, 30, 40]
+numeros.insert(2, 95)
+numeros = numeros + [50, 67]
+
+print(numeros)
+print(numeros[2])
+print(numeros[6])
+
+posicion95 = numeros.index(95)
+posicion67 = numeros.index(67)
+print(numeros)
+print("Posición del 95:", posicion95)
+print("Posición del 67:", posicion67)   
