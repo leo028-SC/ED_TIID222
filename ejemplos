@@ -50,3 +50,17 @@ print("siguiente en la cola:", cola[0])
 time.sleep(3)
 
 print ("Cola restante:", list(cola))
+
+#Ejemplo Recursividad
+def factorial(n):
+    if n==1:
+        return 1
+    return n* factorial(n - 1)
+print(factorial(6))
+
+
+#Operaciones
+def buscar(nodo, objetivo):
+    if not nodo: return False
+    if nodo.val == objetivo: return True
+    return buscar(nodo.sig, objetivo)
